@@ -11,7 +11,11 @@ import SwiftUI
 struct CalanderTestApp: App {
     var body: some Scene {
         WindowGroup {
+            
+            let dateHolder = DateHolder()
+            
             ContentView()
+                .environmentObject(dateHolder)
         }
     }
 }
